@@ -171,7 +171,7 @@
         function startNewChallenge() {
             targetLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
             const phrases = [
-                `Oliver, ¿dónde está la letra ${targetLetter.l}?`,
+                `Dániel, ¿dónde está la letra ${targetLetter.l}?`,
                 `¿Puedes encontrar la ${targetLetter.l} de ${targetLetter.w}?`,
                 `Busquemos la letra ${targetLetter.l}`
             ];
@@ -199,7 +199,7 @@
             if (currentMode === 'learn') {
                 showLetterInfo(item);
             } else if (currentMode === 'sound') {
-                // Solo sonido, sin modal para que Oliver pueda tocar muchas rápido
+                // Solo sonido, sin modal para que Danielle pueda tocar muchas rápido
                 speak(item.l);
                 // Pequeña animación visual en la tarjeta
                 const card = event.currentTarget;
